@@ -21,8 +21,8 @@ class Queue:
     def clear(self):
         self.dq.clear()
 
-    def isEmpty(self):
-        return (len(self.dq)) <= 0
+    def is_empty(self):
+        return len(self.dq) == 0
     
     def print(self):
         print(self.dq)
@@ -55,7 +55,7 @@ while True:
         que1.print()
         break
 
-if que1.isEmpty():
+if que1.is_empty():
     print("Empty")
 else:
     print("Not empty")
